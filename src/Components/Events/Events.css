@@ -1,9 +1,9 @@
-.eventPage{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+.eventPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .eventName {
@@ -23,11 +23,11 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .eventPage{
-        display: block;
-        flex-direction: none;
-        justify-content: none;
-        align-items: none;
-        padding: 0px;
-    }
+  .eventPage {
+    display: block;
+    flex-direction: none;
+    justify-content: none;
+    align-items: none;
+    padding: 0px;
   }
+}
