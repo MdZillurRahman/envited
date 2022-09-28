@@ -13,12 +13,15 @@ const CreateEvent = () => {
 
   const onSubmit = (data) => {
     console.log("RESULT", data);
-    navigate("/event")
+  };
+
+  const handleNext = () => {
+    navigate("/event");
   };
 
   return (
     <div className="eventDetailsForm">
-      <h1>Create Your Event</h1>
+      <h1 style={{ color: "#240D57" }}>Create Your Event</h1>
       <form className="eventForm" onSubmit={handleSubmit(onSubmit)}>
         <label>Event name</label>
         <input
@@ -31,14 +34,12 @@ const CreateEvent = () => {
           type="text"
           {...register("hostName", { required: true, maxLength: 100 })}
         />
-        
+
         <label>Starting Time</label>
         <input
           type="text"
           {...register("startingTime", {
             required: true,
-            // pattern:
-            //   /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
           })}
         />
         <label>Ending Time</label>
@@ -46,10 +47,8 @@ const CreateEvent = () => {
           type="text"
           {...register("endingTime", {
             required: true,
-            // maxLength: 11,
-            // minLength: 8,
           })}
-        />        
+        />
 
         <label>Event Location</label>
         <input
@@ -58,13 +57,15 @@ const CreateEvent = () => {
         />
 
         <label>Event Photo</label>
-        <input
-          type="text"
-          {...register("eventPhoto", { required: true})}
-        />
-        
-        <br/>
-        <input className="submit" type="submit" value="Next"/>
+        <input type="text" {...register("eventPhoto", { required: true })} />
+
+        <br />
+        <input className="submit" type="submit" value="Submit" />
+        <div className="btn4">
+          <button onClick={handleNext} className="nextBtn">
+            Next
+          </button>
+        </div>
       </form>
     </div>
   );
