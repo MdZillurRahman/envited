@@ -1,0 +1,115 @@
+body {
+  width: 100%;
+}
+
+.landing {
+  width: 321px;
+  margin: auto;
+  font-family: "Helvetica";
+  font-style: normal;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  color: #240d57;
+}
+
+.snapchat {
+  background: linear-gradient(90deg, #8456ec 24.2%, #e87bf8 120.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+}
+
+.subTitle {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #4f4f4f;
+}
+
+.eventSection {
+  width: 400px;
+}
+
+.movieNight {
+  filter: drop-shadow(0px 0px 17.6435px rgba(0, 0, 0, 0.05));
+  width: 400px;
+}
+
+.waving {
+  color: #fcd150;
+}
+
+.details {
+  padding: 5px 15px;
+}
+
+.btn1 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  font-weight: 700;
+  background-color: #8456ec;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+
+.div1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.position {
+  color: #321c62;
+  font-weight: 900;
+  font-size: 12px;
+  margin-bottom: -15px;
+}
+.date {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.div2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn2 {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
+  border-radius: 10px;
+  margin-top: 34px;
+}
+
+.btn2 p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .landing {
+    width: 80%;
+    margin: auto;
+  }
+  .movieNight {
+    width: 60%;
+  }
+}
