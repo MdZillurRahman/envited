@@ -6,7 +6,7 @@ import { FaStreetView } from "react-icons/fa";
 
 const Events = () => {
   return (
-    <div>
+    <div className="eventPage">
       <img src={eventImage} alt="EventImage" />
       <div>
         <p className="eventName">Birthday Bash</p>

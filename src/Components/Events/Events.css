@@ -1,3 +1,11 @@
+.eventPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
 .eventName {
   font-weight: 700;
   font-size: 28px;
@@ -13,3 +21,13 @@
   padding: 0 15px;
   color: #828282;
 }
+
+@media only screen and (max-width: 600px) {
+    .eventPage{
+        display: block;
+        flex-direction: none;
+        justify-content: none;
+        align-items: none;
+        padding: 0px;
+    }
+  }
